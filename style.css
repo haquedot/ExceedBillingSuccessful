@@ -55,7 +55,7 @@ h6 {
     display: flex;
     justify-content: center;
     padding-top: 52px;
-    padding-bottom: 131px;
+    padding-bottom: 90px;
     background-color: #F18234;
     /* height: 50vh; */
 }
@@ -198,6 +198,11 @@ h6 {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.button-div button:hover {
+    background-color: #e0772c;
+    color: #fff;
 }
 
 .row {
