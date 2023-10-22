@@ -1,3 +1,7 @@
+body {
+    font-family: Poppins;
+}
+
 h5 {
     color: var(--brand-white, #FFF);
     text-align: center;
@@ -7,57 +11,32 @@ h5 {
     font-weight: 500;
     line-height: normal;
 }
-
+span{
+    font-size: 14px;
+}
 p {
-    color: #fff;
-    /* text-align: center; */
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    margin: 0;
+    font-size: 14px;
+
 }
 
 li {
     list-style: none;
+}
+
+.orange {
+    color: #F18234;
+}
+.date-time{
     color: #707070;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.14px;
+    text-align: center;
 }
-
-span {
-    color: #1C1C1C;
-    text-align: left;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.14px;
-}
-
-h6 {
-    color: #000000;
-    text-align: left;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.14px;
-}
-
 .main-div {
     display: flex;
     justify-content: center;
     padding-top: 52px;
-    padding-bottom: 90px;
+    padding-bottom: 32px;
     background-color: #F18234;
-    /* height: 50vh; */
 }
 
 .circle {
@@ -86,10 +65,12 @@ h6 {
         transform: scale(0);
         opacity: 0;
     }
+
     50% {
         transform: scale(1.2);
         opacity: 1;
     }
+
     100% {
         transform: scale(1);
     }
@@ -101,13 +82,30 @@ h6 {
     text-align: center;
 }
 
-.card-div {
-    width: 70%;
-    border: 1px solid #707070;
-    border-radius: 8px;
-    margin-top: -70px;
-    background-color: #fff;
+.card {
+    border: none;
+    max-width: 930px !important;
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.25);
 }
+
+.card-pay p {
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+
+.card-pay h6 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
 
 .heading {
     padding: 12px 0 0 12px;
@@ -125,84 +123,8 @@ h6 {
     margin: 0;
 }
 
-.date {
-    display: block;
-    text-align: left;
-    padding-top: 8px;
-}
-
-.time {
-    display: block;
-    text-align: left;
-    padding-top: 8px;
-}
-
-.details {
-    width: 100%;
-    display: flex;
-    text-align: left;
-}
-
-.details .d-block {
-    width: 33%;
-    /* margin-right: 54px; */
-}
-
-.details p {
-    color: var(--brand-emphasis-high-emphasis, #1C1C1C);
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.14px;
-    margin: 0;
-}
-
-.details span {
-    color: #707070;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.14px;
-}
-
-.paid {
-    width: 100%;
-}
-
-.paid p {
-    display: flex;
-    justify-content: left;
-    text-align: left;
-    width: 50%;
-    color: #000;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.16px;
-}
-
-.paid span {
-    display: flex;
-    justify-content: right;
-    width: 50%;
-    color: var(--brand-primary-primary-600, #F18234);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.16px;
-}
-
 .button-div {
-    margin-top: 30px;
+    margin-top: 22px;
 }
 
 .button-div button {
@@ -229,55 +151,44 @@ h6 {
     --bs-gutter-x:
 }
 
-.hide-show {
-    display: none;
-}
-
 @media (max-width: 992px) {
-    .main-div {
-        padding-bottom: 161px;
+    span {
+        color: #707070;
     }
-    .card-div {
-        width: 95%;
-        margin-top: -133px;
+    .date-time{
+        color: #000;
+        padding-left: 4px;
+    }
+    .d-flex-mob {
+        display: flex;
+    }
+
+    .main-div {
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: transparent;
+    }
+
+    .payment {
+        background-color: #F18234;
+        padding-top: 52px;
+        padding-bottom: 160px;
+    }
+
+    .card-pay {
+        margin-top: -178px;
+    }
+
+    .card-pay .card {
+        background-color: #FEF3EB;
     }
     .button-div button {
-        width: 95%;
+        width: 100%;
     }
+
     .heading {
         background-color: #FEF3EB;
-        border-radius: 8px 8px 0 0;
-        padding-bottom: 12px;
-        margin: 0;
     }
-    .date {
-        display: flex;
-        padding-left: 12px;
-    }
-    .time {
-        display: flex;
-        padding-left: 12px;
-    }
-    .date span {
-        color: #707070;
-    }
-    .date li {
-        color: #000;
-    }
-    .time span {
-        color: #707070;
-    }
-    .time li {
-        color: #000;
-    }
-    .hide-show {
-        display: block;
-    }
-    .hide-mob {
-        display: none;
-    }
-    /* .details .d-block {
-        width: 33%;
-        margin-right: 38px;
-    } */
 }
